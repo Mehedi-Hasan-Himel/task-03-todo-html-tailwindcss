@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Todo-List Static Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/60e9510ec4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-slate-900 text-white font-[Poppins]">
+    <!-- Header Start-->
+    <header
+      class="max-w-2xl mx-auto px-6 py-10 flex items-center justify-center"
+    >
+      <h1 class="text-4xl font-extrabold">My Weekly Todo List</h1>
+    </header>
+    <!-- Header End-->
+
+    <!-- Main Start -->
+    <main class="max-w-2xl mx-auto px-6">
+      <!-- Input Start -->
+      <section class="bg-slate-800 border border-slate-700 rounded-xl p-4 mb-6">
+        <form class="flex items-center justify-between gap-3">
+          <input
+            type="text"
+            placeholder="Add a new task"
+            class="flex-1 bg-transparent border border-slate-700 rounded-lg px-4 py-3 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-green-500"
+          />
+          <button
+            class="bg-green-600 hover:bg-green-700 transition px-4 py-3 rounded-lg text-white"
+          >
+            <i class="fa-solid fa-plus"></i> Add
+          </button>
+        </form>
+      </section>
+      <!-- Input End -->
+
+      <!-- Todo List Start -->
+      <section
+        class="bg-slate-800 border border-slate-700 rounded-xl p-6 space-y-4"
+      >
+        <!-- Task 1 Start -->
+        <div
+          class="flex items-center gap-3 p-4 bg-slate-900 rounded-lg hover:bg-slate-900 transition"
+        >
+          <input
+            id="t1"
+            type="checkbox"
+            checked
+            class="w-5 h-5 accent-green-500"
+          />
+          <label for="t1" class="flex-1 cursor-pointer font-medium line-through"
+            >Finish Portfolio Website Landing Page Design</label
+          >
+          <button class="text-red-500 hover:text-red-700">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </div>
+        <!-- Task 1 End -->
+
+        <!-- Task 2 Start -->
+        <div
+          class="flex items-center gap-3 p-4 bg-slate-900 rounded-lg hover:bg-slate-900 transition"
+        >
+          <input
+            id="t1"
+            type="checkbox"
+            checked
+            class="w-5 h-5 accent-green-500"
+          />
+          <label for="t1" class="flex-1 cursor-pointer font-medium line-through"
+            >Todo Website Design</label
+          >
+          <button class="text-red-500 hover:text-red-700">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </div>
+        <!-- Task 2 End -->
+
+        <!-- Task 3 Start -->
+        <div
+          class="flex items-center gap-3 p-4 bg-slate-900 rounded-lg hover:bg-slate-900 transition"
+        >
+          <input
+            id="t1"
+            type="checkbox"
+            class="w-5 h-5 accent-green-500"
+          />
+          <label for="t1" class="flex-1 cursor-pointer font-medium"
+            >Blog Website Design</label
+          >
+          <button class="text-red-500 hover:text-red-700">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </div>
+        <!-- Task 3 End -->
+        
+      </section>
+      <!-- Todo List End -->
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start-->
+    <footer class="mt-8 text-center text-slate-500 text-xs">
+      <p>
+        Task - 03 | Static Website - Todo List | HTML & Tailwind CSS.
+      </p>
+    </footer>
+    <!-- Footer End-->
+  </body>
+</html>
