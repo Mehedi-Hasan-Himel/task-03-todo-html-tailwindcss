@@ -14,98 +14,52 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-slate-900 text-white font-[Poppins] h-screen my-auto">
-    <!-- Header Start-->
-    <header
-      class="max-w-2xl mx-auto px-6 py-10 flex items-center justify-center"
-    >
-      <h1 class="text-4xl font-extrabold">My Weekly Todo List</h1>
-    </header>
-    <!-- Header End-->
 
-    <!-- Main Start -->
-    <main class="max-w-2xl mx-auto px-6">
-      <!-- Input Start -->
-      <section class="bg-slate-800 border border-slate-700 rounded-xl p-4 mb-6">
-        <form class="flex items-center justify-between gap-3">
+  <body
+    class="bg-gray-100 text-gray-800 font-[Poppins] min-h-screen flex flex-col"
+  >
+    <!-- Header -->
+    <header class="max-w-2xl px-6 py-10 mx-auto text-center">
+      <h1 class="text-4xl font-extrabold text-gray-800 drop-shadow-sm">
+        My Weekly Todo List
+      </h1>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-1 w-full max-w-2xl px-6 mx-auto">
+      <!-- Input -->
+      <section
+        class="p-4 mb-6 bg-white border border-gray-200 shadow-md rounded-xl"
+      >
+        <form id="todo-form" class="flex items-center justify-between gap-3">
           <input
+            id="todo-input"
             type="text"
             placeholder="Add a new task"
-            class="flex-1 bg-transparent border border-slate-700 rounded-lg px-4 py-3 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-green-500"
+            class="flex-1 px-4 py-3 border border-gray-300 rounded-lg shadow-sm bg-gray-50 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
           <button
-            class="bg-green-600 hover:bg-green-700 transition px-4 py-3 rounded-lg text-white"
+            type="submit"
+            class="px-4 py-3 text-white transition bg-blue-500 rounded-lg shadow-md hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
           >
             <i class="fa-solid fa-plus"></i> Add
           </button>
         </form>
       </section>
-      <!-- Input End -->
 
-      <!-- Todo List Start -->
+      <!-- Todo List -->
       <section
-        class="bg-slate-800 border border-slate-700 rounded-xl p-6 space-y-4"
-      >
-        <!-- Task 1 Start -->
-        <div
-          class="flex items-center gap-3 p-4 bg-slate-900 rounded-lg hover:bg-slate-900 transition"
-        >
-          <input
-            id="t1"
-            type="checkbox"
-            checked
-            class="w-5 h-5 accent-green-500"
-          />
-          <label for="t1" class="flex-1 cursor-pointer font-medium line-through"
-            >Finish Portfolio Website Landing Page Design</label
-          >
-          <button class="text-red-500 hover:text-red-700">
-            <i class="fa-solid fa-trash"></i>
-          </button>
-        </div>
-        <!-- Task 1 End -->
-
-        <!-- Task 2 Start -->
-        <div
-          class="flex items-center gap-3 p-4 bg-slate-900 rounded-lg hover:bg-slate-900 transition"
-        >
-          <input
-            id="t1"
-            type="checkbox"
-            checked
-            class="w-5 h-5 accent-green-500"
-          />
-          <label for="t1" class="flex-1 cursor-pointer font-medium line-through"
-            >Todo Website Design</label
-          >
-          <button class="text-red-500 hover:text-red-700">
-            <i class="fa-solid fa-trash"></i>
-          </button>
-        </div>
-        <!-- Task 2 End -->
-
-        <!-- Task 3 Start -->
-        <div
-          class="flex items-center gap-3 p-4 bg-slate-900 rounded-lg hover:bg-slate-900 transition"
-        >
-          <input id="t1" type="checkbox" class="w-5 h-5 accent-green-500" />
-          <label for="t1" class="flex-1 cursor-pointer font-medium"
-            >Blog Website Design</label
-          >
-          <button class="text-red-500 hover:text-red-700">
-            <i class="fa-solid fa-trash"></i>
-          </button>
-        </div>
-        <!-- Task 3 End -->
-      </section>
-      <!-- Todo List End -->
+        id="todo-list"
+        class="p-6 space-y-4 bg-white border border-gray-200 shadow-md rounded-xl"
+      ></section>
     </main>
-    <!-- Main End -->
 
-    <!-- Footer Start-->
-    <footer class="mt-8 text-center text-slate-500 text-xs">
+    <!-- Footer -->
+    <footer class="mt-8 mb-6 text-xs text-center text-gray-500">
       <p>Todo List | HTML & Tailwind CSS. &copy; 2025 Mehedi Hasan Himel</p>
     </footer>
-    <!-- Footer End-->
+
+    <!-- JS -->
+    <script src="app.js"></script>
   </body>
 </html>
